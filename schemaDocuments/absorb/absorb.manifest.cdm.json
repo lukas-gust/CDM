@@ -1,0 +1,12 @@
+{
+	"jsonSchemaSemanticVersion": "1.0.0",
+	"imports": [],
+	"manifestName": "absorb",
+	"explanation": "CDM standard entities",
+	"entities": [{
+			"type": "LocalEntity",
+			"entityName": "Roles",
+			"entityPath": "absorb.cdm.json/Roles"
+		}
+	]
+}

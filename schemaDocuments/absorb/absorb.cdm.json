@@ -1,0 +1,417 @@
+{
+	"$schema": "../schema.cdm.json",
+	"jsonSchemaSemanticVersion": "1.0.0",
+	"imports": [],
+	"definitions": [{
+		"entityName": "roles",
+		"description": "Absorb LMS roles.",
+		"hasAttributes": [
+            {
+                "name": "Role ID",
+				"dataType": "string"
+            },
+            {
+                "name": "Name",
+				"dataType": "string"
+            },
+            {
+                "name": "Description",
+				"dataType": "string"
+            }
+        ]
+	},
+	{
+		"entityName": "categories",
+		"description": "Absorb LMS categories.",
+		"hasAttributes": [
+            {
+                "name": "Category ID",
+				"dataType": "string"
+            },
+            {
+                "name": "Parent Category ID",
+				"dataType": "string"
+            },
+            {
+                "name": "Name",
+				"dataType": "string"
+            },
+			{
+                "name": "Description",
+				"dataType": "string"
+            }
+        ]
+	},
+	{
+		"entityName": "departments",
+		"description": "Absorb LMS departments.",
+		"hasAttributes": [
+            {
+                "name": "Department ID",
+				"dataType": "string"
+            },
+			{
+                "name": "Name",
+				"dataType": "string"
+            },
+            {
+                "name": "Use Department Contact Details",
+				"dataType": "boolean"
+            },
+            {
+                "name": "Company Name",
+				"dataType": "string"
+            },
+			{
+                "name": "Phone Number",
+				"dataType": "string"
+            },
+			{
+                "name": "Email Address",
+				"dataType": "string"
+            },
+			{
+                "name": "External ID",
+				"dataType": "string"
+            },
+			{
+                "name": "Parent ID",
+				"dataType": "string"
+            },
+			{
+                "name": "Currency ID",
+				"dataType": "string"
+            }
+        ]
+	},
+	{
+		"entityName": "courses",
+		"description": "Absorb LMS departments.",
+		"hasAttributes": [
+            {
+                "name": "Course Type",
+				"dataType": "string"
+            },
+			{
+                "name": "Course ID",
+				"dataType": "string"
+            },
+            {
+                "name": "Name",
+				"dataType": "string"
+            },
+            {
+                "name": "Description",
+				"dataType": "string"
+            },
+			{
+                "name": "Notes",
+				"dataType": "string"
+            },
+			{
+                "name": "External ID",
+				"dataType": "string"
+            },
+			{
+                "name": "Access Date",
+				"dataType": "date"
+            },
+			{
+                "name": "Expire Type",
+				"dataType": "integer"
+            },
+			{
+                "name": "Expire Duration Years",
+				"dataType": "integer"
+            },
+			{
+                "name": "Expire Duration Months",
+				"dataType": "integer"
+            },
+			{
+                "name": "Expire Duration Days",
+				"dataType": "integer"
+            },
+			{
+                "name": "Expire Duration Hours",
+				"dataType": "integer"
+            },
+			{
+                "name": "Expiry Date",
+				"dataType": "date"
+            },
+			{
+                "name": "Active Status",
+				"dataType": "integer"
+            },
+			{
+                "name": "Tag IDs",
+				"dataType": "string"
+            },
+			{
+                "name": "Resource IDs",
+				"dataType": "string"
+            },
+			{
+                "name": "Editor IDs",
+				"dataType": "string"
+            },
+			{
+                "name": "Prices",
+				"dataType": "float"
+            },
+			{
+                "name": "Competency Definition IDs",
+				"dataType": "string"
+            },
+			{
+                "name": "Prerequisite Course IDs",
+				"dataType": "string"
+            },
+			{
+                "name": "Post Enrollment Course IDs",
+				"dataType": "string"
+            },
+			{
+                "name": "Allow Course Evaluation",
+				"dataType": "boolean"
+            },
+			{
+                "name": "Category ID",
+				"dataType": "string"
+            },
+			{
+                "name": "Certificate Url",
+				"dataType": "string"
+            },
+			{
+                "name": "Audience",
+				"dataType": "string"
+            },
+			{
+                "name": "Goals",
+				"dataType": "string"
+            },
+			{
+                "name": "Company Cost",
+				"dataType": "string"
+            },
+			{
+                "name": "Learner Cost",
+				"dataType": "string"
+            },
+			{
+                "name": "Company Time",
+				"dataType": "string"
+            },
+			{
+                "name": "Learner Time",
+				"dataType": "string"
+            }
+        ]
+	},
+	{
+		"entityName": "users",
+		"description": "Absorb LMS users.",
+		"hasAttributes": [
+            {
+                "name": "Absorb ID",
+				"dataType": "string"
+            },
+            {
+                "name": "Supervisor Name",
+				"dataType": "string"
+            },
+            {
+                "name": "Company",
+				"dataType": "string"
+            },
+			{
+                "name": "Department ID",
+				"dataType": "string"
+            },
+			{
+                "name": "First Name",
+				"dataType": "string"
+            },
+			{
+                "name": "Middle Name",
+				"dataType": "string"
+            },
+			{
+                "name": "Last Name",
+				"dataType": "string"
+            },
+			{
+                "name": "Username",
+				"dataType": "string"
+            },
+			{
+                "name": "Employee ID",
+				"dataType": "integer"
+            },
+			{
+                "name": "Location",
+				"dataType": "string"
+            },
+			{
+                "name": "Job Title",
+				"dataType": "string"
+            },
+			{
+                "name": "Reference Number",
+				"dataType": "string"
+            },
+			{
+                "name": "Date Hired",
+				"dataType": "date"
+            },
+			{
+                "name": "Date Terminated",
+				"dataType": "date"
+            },
+			{
+                "name": "Notes",
+				"dataType": "string"
+            },
+			{
+                "name": "Active Status",
+				"dataType": "integer"
+            },
+			{
+                "name": "Is Learner",
+				"dataType": "boolean"
+            },
+			{
+                "name": "Is Admin",
+				"dataType": "boolean"
+            },
+			{
+                "name": "Is Instructor",
+				"dataType": "boolean"
+            },
+			{
+                "name": "Supervisor ID",
+				"dataType": "string"
+            },
+			{
+                "name": "Has Username",
+				"dataType": "boolean"
+            },
+			{
+                "name": "Role ID #1",
+				"dataType": "string"
+            },
+			{
+                "name": "Role ID #2",
+				"dataType": "string"
+            },
+			{
+                "name": "Role ID #3",
+				"dataType": "string"
+            },
+			{
+                "name": "Role ID #4",
+				"dataType": "string"
+            }
+        ]
+	},
+	{
+		"entityName": "userenrollments",
+		"description": "Absorb LMS userenrollments.",
+		"hasAttributes": [
+            {
+                "name": "Enrollment ID",
+				"dataType": "string"
+            },
+			{
+                "name": "Course ID",
+				"dataType": "string"
+            },
+            {
+                "name": "Course Name",
+				"dataType": "boolean"
+            },
+            {
+                "name": "Progress",
+				"dataType": "double"
+            },
+			{
+                "name": "Score",
+				"dataType": "double"
+            },
+			{
+                "name": "Date Completed",
+				"dataType": "timestamp"
+            },
+			{
+                "name": "Date Expires",
+				"dataType": "timestamp"
+            },
+			{
+                "name": "Full Name",
+				"dataType": "string"
+            },
+			{
+                "name": "Job Title",
+				"dataType": "string"
+            },
+			{
+                "name": "Course Version ID",
+				"dataType": "string"
+            },
+			{
+                "name": "Absorb User ID",
+				"dataType": "string"
+            },
+			{
+                "name": "Accepted Terms And Conditions",
+				"dataType": "boolean"
+            },
+			{
+                "name": "Time Spent",
+				"dataType": "string"
+            },
+			{
+                "name": "Date Started",
+				"dataType": "timestamp"
+            },
+			{
+                "name": "Enrollment Key ID",
+				"dataType": "string"
+            },
+			{
+                "name": "Certificate ID",
+				"dataType": "string"
+            },
+			{
+                "name": "Credits",
+				"dataType": "double"
+            },
+			{
+                "name": "Is Active",
+				"dataType": "boolean"
+            },
+			{
+                "name": "Course Collection ID",
+				"dataType": "string"
+            },
+			{
+                "name": "Access Date",
+				"dataType": "string"
+            },
+			{
+                "name": "Date Due",
+				"dataType": "timestamp"
+            },
+			{
+                "name": "Status",
+				"dataType": "string"
+            },
+			{
+                "name": "On Time",
+				"dataType": "string"
+            }
+        ]
+	}]
+}
